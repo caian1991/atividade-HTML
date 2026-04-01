@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="receber dados.html" method="POST">
+        <label for="nome">nome</label>
+        <input type="text" id="nome" name="nome">
+        <label for="email">e-mail</label>
+        <input type="email" id="email" name="email">
+        <br>
+        <input type="radio" name="sexo" value="masculino">masculino
+        <input type="radio" name="sexo" value="feminino">feminino
+        <br>
+        <input type="checkbox" name="hobbies[]">ouvir musica
+        <input type="checkbox" name="hobbies[]">jogar game
+        <input type="checkbox" name="hobbies[]">tocar instrumentos
+        <select id="estado">
+            <option value="">selecione</option>
+            <option value="acre"></option>
+            <option value="sp">sao paulo</option>
+            <option value="mg">minas gerais</option>
+
+        </select>
+        <br>
+        <fieldset>
+            <legend>dados pessoais</legend>
+            <label for="nome">nome</label>
+            <input type="text" id="nome">
+            <label for="email" id="email"></label>
+            <label for="email" id="email"></label>
+        
+
+            
+        </fieldset>
+        <br>
+        <label for="idade">idade</label>
+        <input type="number" id="idade" name="idade" min="1" max="120" step="1" value="18">
+        <br>
+
+
+        </button>
+        <br>
+        <label for="points">pontuação</label>
+        <input type="range" id="points" name="points" min="0" max="10">
+        <br>
+
+        <input type="text" placeholder="digite seu nome">
+        <input type="text" placeholder="digite seu email" required>
+        <input type="text" placeholder="seu sobrenome" autofocus>
+        <input type="text" placeholder="nao editavel" disabled>
+        <label for="data">data</label>
+        <input type="date" id="data" name="data" min="1900-01-01" max="2020-12-31">
+        <br>
+        <label for="cor">escolha uma cor</label>
+        <input type="color">
+
+        <label for="">data e hora</label>
+        <input type="datetime-local">
+        
+        <label for=""enviar arquivo></label>
+        <input type="file" accept="image/*">
+
+        <label for="">seu site</label>
+        <input type="url">
+        <button type="submit">enviar</button>
+
+        <label for="">telefone</label>
+        <input type="tel" pattern="[0-9]+" inputmode="numeric">
+
+        <label for="">buscar</label>
+        <input type="search">
+
+        <label for="">escolha um navegador</label>
+        <input list="navegagadores">
+        <datalist id="navegagadores">
+<option value="chrome"></option>
+<option value="firefox"></option>
+<option value="edge"></option>
+<option value="safari"></option>
+
+        </datalist>
+
+        <label for="">progresso</label>
+        <progress value="70" max="100"></progress>
+
+
+    </form>
+</body>
+</html>
